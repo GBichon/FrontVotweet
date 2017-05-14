@@ -8,7 +8,7 @@ app.factory('loginService',function($http, $location, sessionService){
 				if(uid){
 					//scope.msgtxt='Correct information';
 					sessionService.set('uid',uid);
-					$location.path('admin');
+					$location.path('/admin');
 				}	       
 				else  {
 					scope.msgtxt='incorrect information';
